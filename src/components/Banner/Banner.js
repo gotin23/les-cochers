@@ -1,7 +1,7 @@
 // "use client";
 // import React from "react";
 import Image from "next/image";
-import BannerImage from "../../assets/images/velo-banner2.jpeg";
+import BannerImage from "../../assets/images/Velo-Banner2.jpeg";
 
 function Banner() {
   return (
