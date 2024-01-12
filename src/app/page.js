@@ -6,7 +6,7 @@ import cocherImage from "../assets/images/ancien-cocher.jpg";
 import veloCargoImage from "../assets/images/velo-cargo.png";
 import mailIcon from "../assets/icons/Mailbox raised flag.svg";
 import arrowUpIcon from "../assets/icons/arrow-up.svg";
-import leafImage from "../assets/images/feu.svg";
+
 import secondLeafImage from "../assets/images/leaf.svg";
 import leafWindImage from "../assets/images/leaf-wind.svg";
 
