@@ -5,6 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import cocherImage from "../assets/images/ancien-cocher.jpg";
 import veloCargoImage from "../assets/images/velo-cargo.png";
 import mailIcon from "../assets/icons/Mailbox raised flag.svg";
+import arrowUpIcon from "../assets/icons/arrow-up.svg";
 
 export default function Home() {
   return (
@@ -18,11 +19,12 @@ export default function Home() {
         <section className="p-10" id="association">
           <h3 className="text-3xl mb-10 text-red roboto-bold">L’association</h3>
           <div className="flex w-full">
-            <div className="w-[60%] pr-5">
+            <div className="w-[62%] pr-5">
               <p className="text-xl syne text-justify leading-6	">
                 Les Cochers Solidaires de Nice mobilisent leurs cycles et leurs muscles au service des habitants, des associations et des visiteurs de{" "}
                 <span className="roboto-bold">Nice la belle</span>.
               </p>
+              <br />
               <p className="text-xl syne text-justify leading-6	">
                 {" "}
                 Nous souhaitons partager notre joie de circuler en sécurité sur le réseau de pistes cyclables en promenant en <span className="roboto-bold">vélo cargo</span>, en
@@ -34,20 +36,23 @@ export default function Home() {
                 <li className="text-xl syne text-justify leading-6	">- des personnes âgées</li>
                 <li className="text-xl syne text-justify leading-6	">- des amateurs de jardin, d’architecture et d’histoire locale.</li>
               </ul>
+              <br />
               <p className="text-xl syne text-justify leading-6	">
-                Nous sommes également à la disposition des <span className="roboto-bold">associations à but solidaire</span> :
+                Nous sommes également à la disposition des <span className="roboto-bold">associations à but solidaire</span>:
               </p>
+
               <ul>
                 <li className="text-xl syne text-justify leading-6	">- transport de denrées alimentaires</li>
                 <li className="text-xl syne text-justify leading-6	">- maraudes à vélo</li>
                 <li className="text-xl syne text-justify leading-6	">- livraison de colis</li>
               </ul>
+              <br />
               <p className="text-xl syne text-justify leading-6	">
                 <span className="roboto-bold">Sans émission de carbone</span>, sans pollution et sans bruit, nous souhaitons faire renaître la grande tradition des cochers niçois
                 en utilisant le moyen de transport le plus efficace sur le plan énergétique, le vélo !
               </p>
             </div>
-            <div className="w-[40%] flex items-center justify-center p-5">
+            <div className="w-[38%] flex items-center justify-center p-5">
               <Image alt={"photo de vieux cocher"} src={cocherImage} style={{ objectFit: "cover", maxHeight: "500px" }} placeholder="blur" className="border-red" />
             </div>
           </div>
@@ -126,7 +131,9 @@ export default function Home() {
         {/* Nous contacter */}
         <section className="p-10" id="contact">
           <h3 className="text-3xl  mb-10 text-red roboto-bold">Nous contacter</h3>
-          <p className="mb-10 text-xl syne text-justify leading-6	">Si vous souhaitez nous contacter par email, n&apos;hésitez pas à nous écrire:</p>
+          <p className="mb-10 text-xl syne text-justify leading-6	">
+            Si vous souhaitez nous <span className="roboto-bold">contacter par email</span> , n&apos;hésitez pas à nous écrire:
+          </p>
           <div className="flex justify-between">
             <div className="grid place-content-center w-[50%]">
               <button className=" py-2 px-5 text-4xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover">Envoyer un email</button>
@@ -136,6 +143,13 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <div className="flex justify-center mt-20">
+          <a href="#accueil" className="flex justify-center align-middle bg-white border-2 rounded-md cursor-pointer">
+            <Image src={arrowUpIcon} width={20} alt="icon fleche du haut" />
+            <p className="py-2 px-5 text-xl rounded-md">Haut de page </p>
+            <Image src={arrowUpIcon} width={20} alt="icon fleche du haut" />
+          </a>
+        </div>
         {/* Le footer */}
         <Footer />
       </main>
