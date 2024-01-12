@@ -16,7 +16,7 @@ export default function Home() {
         <Banner />
         {/* L'association */}
         <section className="p-10" id="association">
-          <h3 className="text-3xl mb-5 text-red roboto-bold">L’association</h3>
+          <h3 className="text-3xl mb-10 text-red roboto-bold">L’association</h3>
           <div className="flex w-full">
             <div className="w-[60%] pr-5">
               <p className="text-xl syne text-justify leading-6	">
@@ -54,7 +54,7 @@ export default function Home() {
         </section>
         {/* La flotte */}
         <section id="notre-flotte" className="p-10">
-          <h3 className="text-3xl mb-5 text-red roboto-bold">Notre flotte à deux et trois roues</h3>
+          <h3 className="text-3xl  mb-10 text-red roboto-bold">Notre flotte à deux et trois roues</h3>
           <div className="flex justify-between">
             <div className="w-[30% flex justify-center items-center">
               <Image src={veloCargoImage} alt="velo cargo" width={350} />
@@ -93,7 +93,7 @@ export default function Home() {
         </section>
         {/* Nos valeurs */}
         <section className="p-10" id="valeurs">
-          <h3 className="text-3xl mb-5 text-red roboto-bold">Nos valeurs</h3>
+          <h3 className="text-3xl  mb-10 text-red roboto-bold">Nos valeurs</h3>
           <div className="flex justify-between">
             <article className="w-[30%] bg-[#38363612] rounded-md p-5 text-justify">
               <h4 className="text-xl mb-5 text-red roboto-bold">1.Joie</h4>
@@ -125,13 +125,13 @@ export default function Home() {
         </section>
         {/* Nous contacter */}
         <section className="p-10" id="contact">
-          <h3 className="text-3xl mb-5 text-red roboto-bold">Nous contacter</h3>
+          <h3 className="text-3xl  mb-10 text-red roboto-bold">Nous contacter</h3>
           <p className="mb-10 text-xl syne text-justify leading-6	">Si vous souhaitez nous contacter par email, n&apos;hésitez pas à nous écrire:</p>
           <div className="flex justify-between">
             <div className="grid place-content-center w-[50%]">
               <button className=" py-2 px-5 text-4xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover">Envoyer un email</button>
             </div>
-            <div className="grid place-content-center w-[50%]">
+            <div className="flex  w-[50%] justify-center">
               <Image src={mailIcon} width={100} alt="icon de mail" />
             </div>
           </div>
