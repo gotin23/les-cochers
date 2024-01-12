@@ -9,29 +9,40 @@ import mailIcon from "../assets/icons/Mailbox raised flag.svg";
 export default function Home() {
   return (
     <div className="min-h-screen  bg-white 	w-[1440px]">
+      {/* La barre de navigation */}
       <NavBar />
       <main>
+        {/* La banierre */}
         <Banner />
+        {/* L'association */}
         <section className="p-10" id="association">
           <h3 className="text-3xl mb-5 text-red roboto-bold">L’association</h3>
           <div className="flex w-full">
             <div className="w-[60%] pr-5">
               <p className="text-xl syne text-justify leading-6	">
                 Les Cochers Solidaires de Nice mobilisent leurs cycles et leurs muscles au service des habitants, des associations et des visiteurs de{" "}
-                <span className="roboto-bold">Nice la belle</span>.<br></br>
-                <br></br>
+                <span className="roboto-bold">Nice la belle</span>.
+              </p>
+              <p className="text-xl syne text-justify leading-6	">
+                {" "}
                 Nous souhaitons partager notre joie de circuler en sécurité sur le réseau de pistes cyclables en promenant en <span className="roboto-bold">vélo cargo</span>, en
-                tandem et remorque, et bientôt en tricycle pousse-pousse :<br></br>- des enfants malades
-                <br></br>- des personnes à mobilité réduite
-                <br></br>- des personnes âgées
-                <br></br>- des amateurs de jardin, d’architecture et d’histoire locale.
-                <br></br>
-                <br></br>
-                Nous sommes également à la disposition des <span className="roboto-bold">associations à but solidaire</span> :<br></br>- transport de denrées alimentaires
-                <br></br>- maraudes à vélo
-                <br></br>- livraison de colis
-                <br></br>
-                <br></br>
+                tandem et remorque, et bientôt en tricycle pousse-pousse :
+              </p>
+              <ul>
+                <li className="text-xl syne text-justify leading-6	">- des enfants malades</li>
+                <li className="text-xl syne text-justify leading-6	">- des personnes à mobilité réduite</li>
+                <li className="text-xl syne text-justify leading-6	">- des personnes âgées</li>
+                <li className="text-xl syne text-justify leading-6	">- des amateurs de jardin, d’architecture et d’histoire locale.</li>
+              </ul>
+              <p className="text-xl syne text-justify leading-6	">
+                Nous sommes également à la disposition des <span className="roboto-bold">associations à but solidaire</span> :
+              </p>
+              <ul>
+                <li className="text-xl syne text-justify leading-6	">- transport de denrées alimentaires</li>
+                <li className="text-xl syne text-justify leading-6	">- maraudes à vélo</li>
+                <li className="text-xl syne text-justify leading-6	">- livraison de colis</li>
+              </ul>
+              <p className="text-xl syne text-justify leading-6	">
                 <span className="roboto-bold">Sans émission de carbone</span>, sans pollution et sans bruit, nous souhaitons faire renaître la grande tradition des cochers niçois
                 en utilisant le moyen de transport le plus efficace sur le plan énergétique, le vélo !
               </p>
@@ -41,6 +52,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* La flotte */}
         <section id="notre-flotte" className="p-10">
           <h3 className="text-3xl mb-5 text-red roboto-bold">Notre flotte à deux et trois roues</h3>
           <div className="flex justify-between">
@@ -49,21 +61,37 @@ export default function Home() {
             </div>
             <div className="w-[70%]">
               {" "}
+              <p className="text-xl syne text-justify leading-6	"> A ce jour, l’association dispose :</p>
+              <br />
+              <ul>
+                <li className="text-xl syne text-justify leading-6	">
+                  - d’un vélo <span className="roboto-bold">cargo Babboe</span> pouvant promener quatre enfants de moins de 22 kg avec ceintures de sécurité trois points. Il peut
+                  servir également au transport de denrées
+                </li>
+                <li className="text-xl syne text-justify leading-6	">
+                  {" "}
+                  - d’un <span className="roboto-bold"> tandem Micmo</span> pouvant emmener un adolescent ou adulte déficient visuel ou dont le handicap ne lui permet pas de faire
+                  du vélo seul{" "}
+                </li>
+                <li className="text-xl syne text-justify leading-6	">
+                  - d’une remorque associée au tandem pouvant accueillir <span className="roboto-bold"> deux enfants </span>deux enfants de moins de 25 kg, avec ceintures de
+                  sécurité trois points
+                </li>
+                <li className="text-xl syne text-justify leading-6	">
+                  {" "}
+                  - d’un vélo pliable Brompton <span className="roboto-bold">vélo pliable Brompton </span> apte aux livraisons rapides de colis légers <br />- d’une remorque
+                  associée au Brompton d’une capacité de 65 kg (colis ou marchandises)
+                </li>
+              </ul>
+              <br />
               <p className="text-xl syne text-justify leading-6	">
-                A ce jour, l’association dispose :<br />
-                <br />- d’un vélo cargo Babboe pouvant promener quatre enfants de moins de 22 kg avec ceintures de sécurité trois points. Il peut servir également au transport de
-                denrées <br />
-                - d’un tandem Micmo pouvant emmener un adolescent ou adulte déficient visuel ou dont le handicap ne lui permet pas de faire du vélo seul <br />
-                - d’une remorque associée au tandem pouvant accueillir deux enfants de moins de 25 kg, avec ceintures de sécurité trois points <br />
-                - d’un vélo pliable Brompton apte aux livraisons rapides de colis légers <br />- d’une remorque associée au Brompton d’une capacité de 65 kg (colis ou
-                marchandises).
-                <br />
-                <br />
-                Dans un futur proche, nous disposerons d’un tricycle pousse-pousse (vélo calèche) permettant le déplacement de deux adultes.
+                {" "}
+                Dans un futur proche, nous disposerons d’un <span className="roboto-bold">tricycle pousse-pousse</span> (vélo calèche) permettant le déplacement de deux adultes.
               </p>
             </div>
           </div>
         </section>
+        {/* Nos valeurs */}
         <section className="p-10" id="valeurs">
           <h3 className="text-3xl mb-5 text-red roboto-bold">Nos valeurs</h3>
           <div className="flex justify-between">
@@ -95,6 +123,7 @@ export default function Home() {
             </article>
           </div>
         </section>
+        {/* Nous contacter */}
         <section className="p-10" id="contact">
           <h3 className="text-3xl mb-5 text-red roboto-bold">Nous contacter</h3>
           <p className="mb-10 text-xl syne text-justify leading-6	">Si vous souhaitez nous contacter par email, n&apos;hésitez pas à nous écrire:</p>
@@ -107,6 +136,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Le footer */}
         <Footer />
       </main>
     </div>
