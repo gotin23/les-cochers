@@ -16,6 +16,13 @@
 .roboto{
     font-family: 'roboto';
 }
+@font-face {
+    font-family: 'syne';
+    src:url("../assets/fonts/Syne-VariableFont_wght.ttf");
+}
+.syne{
+    font-family: 'syne';
+}
 
 
 
@@ -36,8 +43,13 @@
     box-sizing: border-box;
 
   }
+  html{
+    scroll-behavior: smooth;
+  }
   body{
     font-family:  'sans-serif','Helvetica Neue',Helvetica,Arial;
     background-color: #f9f6f6;
+    /* background-color: #d31703; */
+
 
   }

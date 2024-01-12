@@ -13,7 +13,7 @@ function Banner() {
         </h2>
         <button className=" py-2 text-2xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover">Rejoignez-nous !</button>
       </div>
-      <Image src={BannerImage} style={{ objectFit: "cover", maxHeight: "900px" }} placeholder="blur" />
+      <Image src={BannerImage} style={{ objectFit: "cover", maxHeight: "900px" }} placeholder="blur" alt="photo de velo cargo sur la promenade des anglais" />
     </section>
   );
 }
