@@ -6,6 +6,9 @@ import cocherImage from "../assets/images/ancien-cocher.jpg";
 import veloCargoImage from "../assets/images/velo-cargo.png";
 import mailIcon from "../assets/icons/Mailbox raised flag.svg";
 import arrowUpIcon from "../assets/icons/arrow-up.svg";
+import leafImage from "../assets/images/feu.svg";
+import secondLeafImage from "../assets/images/leaf.svg";
+import leafWindImage from "../assets/images/leaf-wind.svg";
 
 export default function Home() {
   return (
@@ -19,7 +22,7 @@ export default function Home() {
         <section className="p-10" id="association">
           <h3 className="text-3xl mb-10 text-red roboto-bold">L’association</h3>
           <div className="flex w-full">
-            <div className="w-[62%] pr-5">
+            <article className="w-[62%] pr-5">
               <p className="text-xl syne text-justify leading-6	">
                 Les Cochers Solidaires de Nice mobilisent leurs cycles et leurs muscles au service des habitants, des associations et des visiteurs de{" "}
                 <span className="roboto-bold">Nice la belle</span>.
@@ -51,9 +54,9 @@ export default function Home() {
                 <span className="roboto-bold">Sans émission de carbone</span>, sans pollution et sans bruit, nous souhaitons faire renaître la grande tradition des cochers niçois
                 en utilisant le moyen de transport le plus efficace sur le plan énergétique, le vélo !
               </p>
-            </div>
+            </article>
             <div className="w-[38%] flex items-center justify-center p-5">
-              <Image alt={"photo de vieux cocher"} src={cocherImage} style={{ objectFit: "cover", maxHeight: "500px" }} placeholder="blur" className="border-red" />
+              <Image alt={"photo de vieux cocher"} src={cocherImage} style={{ objectFit: "cover", maxHeight: "500px" }} placeholder="blur" />
             </div>
           </div>
         </section>
@@ -100,31 +103,29 @@ export default function Home() {
         <section className="p-10" id="valeurs">
           <h3 className="text-3xl  mb-10 text-red roboto-bold">Nos valeurs</h3>
           <div className="flex justify-between">
-            <article className="w-[30%] bg-[#38363612] rounded-md p-5 text-justify">
-              <h4 className="text-xl mb-5 text-red roboto-bold">1.Joie</h4>
-              <p className="syne">
-                Inspirer la brise marine, ressentir la douce caresse du soleil et le vent de la vitesse, s’extasier devant l’horizon ou une superbe bâtisse sont des sources de joie
-                et d’équilibre essentiel pour tout être humain. Une promenade sur… la Promenade, sur le Port ou dans les jardins en croisant des visages réjouis et des fleurs
-                épanouies font plus d’effet que tranquillisants et antidépresseurs. Les Cochers Solidaires de Nice souhaitent partager le plus largement possible leur joie de vivre
-                et de circuler les yeux grands ouverts et à vitesse humaine dans notre cité.
+            <article className="w-[26%] bg-[#38363612] rounded-md p-5 text-justify relative">
+              <Image src={leafWindImage} width={150} alt="icon fleche du haut" className="absolute right-0 top-1 opacity-25" />
+              <h4 className="text-2xl mb-5 text-red roboto-bold">Respiration</h4>
+              <p className="syne text-xl">
+                Notre objectif principal est de réduire le trafic des véhicules de livraison et de transport de personnes. Notre ville a été dessinée bien avant l’invasion
+                automobile. À vélo, à Nice aussi, on dépasse les autos. Revenons à la sagesse des cochers d’antan.
               </p>
             </article>
-            <article className="w-[30%]  bg-[#38363612] rounded-md p-5 text-justify">
-              <h4 className="text-xl mb-5 text-red roboto-bold">2.Solidarité</h4>
-              <p className="syne">
-                Le soleil se lève pour tout le monde, mais beaucoup n’ont pas la chance de pouvoir se promener à vélo. La maladie, la pauvreté, l’exil, la vieillesse ont tôt fait
-                d’exclure les moins favorisés et les condamner à vivre constamment entre quatre murs, quand ce n’est pas de survivre dans la rue ! La mission des Cochers Solidaires
-                de Nice est de soulager, le temps d’une balade ou d’une livraison, les plus faibles, les plus seuls et les plus démunis. En contact avec les associations
-                humanitaires, les Cochers Solidaires de Nice s’engagent pour un futur simple basé sur le partage
+            <article className="w-[26%] bg-[#38363612] rounded-md p-5 text-justify relative">
+              <Image src={secondLeafImage} width={150} alt="icon fleche du haut" className="absolute left-2 top-2 rotate-90 opacity-25" />
+              <h4 className="text-2xl mb-5 text-red roboto-bold">Joie</h4>
+              <p className="syne text-xl">
+                Une promenade sur… la Promenade, sur le Port ou dans les jardins en croisant des visages réjouis et des fleurs épanouies font plus d’effet que tranquillisants et
+                antidépresseurs. Nous partageons notre joie de vivre et de circuler les yeux grands ouverts dans notre cité.
               </p>
             </article>
-            <article className="w-[30%] bg-[#38363612] rounded-md p-5 text-justify">
-              <h4 className="text-xl mb-5 text-red roboto-bold">3.Respiration</h4>
-              <p className="syne">
-                Nice a besoin d’air pur, notre objectif principal est de réduire le trafic automobile des véhicules de livraison et de transport de personnes. Notre ville a été
-                dessinée bien avant l’invasion automobile et les rues et avenues n’avaient pas pour vocation d’être des parkings à ciel ouvert. Peu à peu, il faut revenir à la
-                sagesse du temps des cochers et des transports doux, d’autant plus qu’à vélo, à Nice aussi, on dépasse les autos et les taxis…
+            <article className="w-[26%]  bg-[#38363612] rounded-md p-5 text-justify relative">
+              <h4 className="text-2xl mb-5 text-red roboto-bold">Solidarité</h4>
+              <p className="syne text-xl">
+                La mission des Cochers Solidaires de Nice est de soulager, le temps d’une balade ou d’une livraison, les plus faibles, les plus seuls et les plus démunis. Les
+                Cochers Solidaires de Nice s’engagent pour un futur simple basé sur le partage et sur l’espoir..
               </p>
+              <Image src={secondLeafImage} width={150} alt="icon fleche du haut" className="absolute right-0 bottom-1 opacity-25" />
             </article>
           </div>
         </section>
@@ -143,7 +144,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="flex justify-center mt-20">
+        <div className="flex justify-center mt-20 ">
           <a href="#accueil" className="flex justify-center align-middle bg-white border-2 rounded-md cursor-pointer">
             <Image src={arrowUpIcon} width={20} alt="icon fleche du haut" />
             <p className="py-2 px-5 text-xl rounded-md">Haut de page </p>
