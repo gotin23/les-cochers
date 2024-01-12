@@ -135,11 +135,11 @@ export default function Home() {
             Si vous souhaitez nous <span className="roboto-bold">contacter par email</span> , n&apos;hésitez pas à nous écrire:
           </p>
           <div className="flex justify-between">
-            <div className="grid place-content-center w-[50%]">
-              <button className=" py-2 px-5 text-4xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover">Envoyer un email</button>
-            </div>
             <div className="flex  w-[50%] justify-center">
               <Image src={mailIcon} width={100} alt="icon de mail" />
+            </div>
+            <div className="grid place-content-center w-[50%]">
+              <button className=" py-2 px-5 text-4xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover">Envoyer un email</button>
             </div>
           </div>
         </section>
