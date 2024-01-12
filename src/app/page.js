@@ -1,44 +1,103 @@
-import Link from "next/link";
 import Image from "next/image";
 import NavBar from "@/components/NavBar/NavBar";
 import Banner from "@/components/Banner/Banner";
+import Footer from "@/components/Footer/Footer";
 import cocherImage from "../assets/images/ancien-cocher.jpg";
+import mailIcon from "../assets/icons/Mailbox raised flag.svg";
 
 export default function Home() {
   return (
-    <div className="min-h-screen  bg-white 	w-[1440px] shadow-md">
+    <div className="min-h-screen  bg-white 	w-[1440px] roboto">
       <NavBar />
       <main>
         <Banner />
-        <section className="p-10  shadow-md">
-          <h2 className="text-3xl mb-5 text-red ">L’association</h2>
+        <section className="p-10" id="association">
+          <h3 className="text-3xl mb-5 text-red roboto-bold">L’association</h3>
           <div className="flex w-full">
-            <div className="w-1/2 pr-5">
-              <p>
-                Les Cochers Solidaires de Nice mobilisent leurs cycles et leurs muscles au service des habitants, des associations et des visiteurs de Nice la belle.
+            <div className="w-[60%] pr-5">
+              <p className="text-xl roboto text-justify leading-6	">
+                Les Cochers Solidaires de Nice mobilisent leurs cycles et leurs muscles au service des habitants, des associations et des visiteurs de{" "}
+                <span className="roboto-bold">Nice la belle</span>.<br></br>
                 <br></br>
-                <br></br>
-                Nous souhaitons partager notre joie de circuler en sécurité sur le réseau de pistes cyclables en promenant en vélo cargo, en tandem et remorque, et bientôt en
-                tricycle pousse-pousse :<br></br>- des enfants malades
+                Nous souhaitons partager notre joie de circuler en sécurité sur le réseau de pistes cyclables en promenant en <span className="roboto-bold">vélo cargo</span>, en
+                tandem et remorque, et bientôt en tricycle pousse-pousse :<br></br>- des enfants malades
                 <br></br>- des personnes à mobilité réduite
                 <br></br>- des personnes âgées
                 <br></br>- des amateurs de jardin, d’architecture et d’histoire locale.
                 <br></br>
                 <br></br>
-                Nous sommes également à la disposition des associations à but solidaire :<br></br>- transport de denrées alimentaires
+                Nous sommes également à la disposition des <span className="roboto-bold">associations à but solidaire</span> :<br></br>- transport de denrées alimentaires
                 <br></br>- maraudes à vélo
                 <br></br>- livraison de colis
                 <br></br>
                 <br></br>
-                Sans émission de carbone, sans pollution et sans bruit, nous souhaitons faire renaître la grande tradition des cochers niçois en utilisant le moyen de transport le
-                plus efficace sur le plan énergétique, le vélo !
+                <span className="roboto-bold">Sans émission de carbone</span>, sans pollution et sans bruit, nous souhaitons faire renaître la grande tradition des cochers niçois
+                en utilisant le moyen de transport le plus efficace sur le plan énergétique, le vélo !
               </p>
             </div>
-            <div className="w-1/2 flex items-center justify-center">
-              <Image src={cocherImage} className="border-red" />
+            <div className="w-[40%] flex items-center justify-center p-5">
+              <Image alt={"photo de vieux cocher"} src={cocherImage} style={{ objectFit: "cover", maxHeight: "500px" }} placeholder="blur" className="border-red" />
             </div>
           </div>
         </section>
+        <section id="notre-flotte" className="p-10">
+          <h3 className="text-3xl mb-5 text-red roboto-bold">Notre flotte à deux et trois roues</h3>
+          <p className="text-xl roboto text-justify leading-6	">
+            A ce jour, l’association dispose :<br />
+            <br />- d’un vélo cargo Babboe pouvant promener quatre enfants de moins de 22 kg avec ceintures de sécurité trois points. Il peut servir également au transport de
+            denrées <br />
+            - d’un tandem Micmo pouvant emmener un adolescent ou adulte déficient visuel ou dont le handicap ne lui permet pas de faire du vélo seul <br />
+            - d’une remorque associée au tandem pouvant accueillir deux enfants de moins de 25 kg, avec ceintures de sécurité trois points <br />
+            - d’un vélo pliable Brompton apte aux livraisons rapides de colis légers <br />- d’une remorque associée au Brompton d’une capacité de 65 kg (colis ou marchandises).
+            <br />
+            <br />
+            Dans un futur proche, nous disposerons d’un tricycle pousse-pousse (vélo calèche) permettant le déplacement de deux adultes.
+          </p>
+        </section>
+        <section className="p-10">
+          <h3 className="text-3xl mb-5 text-red roboto-bold">Nos valeurs</h3>
+          <div className="flex justify-between">
+            <article className="w-[30%] bg-[#38363612] rounded-md p-5 text-justify">
+              <h4 className="text-xl mb-5 text-red roboto-bold">1.Joie</h4>
+              <p>
+                Inspirer la brise marine, ressentir la douce caresse du soleil et le vent de la vitesse, s’extasier devant l’horizon ou une superbe bâtisse sont des sources de joie
+                et d’équilibre essentiel pour tout être humain. Une promenade sur… la Promenade, sur le Port ou dans les jardins en croisant des visages réjouis et des fleurs
+                épanouies font plus d’effet que tranquillisants et antidépresseurs. Les Cochers Solidaires de Nice souhaitent partager le plus largement possible leur joie de vivre
+                et de circuler les yeux grands ouverts et à vitesse humaine dans notre cité.
+              </p>
+            </article>
+            <article className="w-[30%]  bg-[#38363612] rounded-md p-5 text-justify">
+              <h4 className="text-xl mb-5 text-red roboto-bold">2.Solidarité</h4>
+              <p>
+                Le soleil se lève pour tout le monde, mais beaucoup n’ont pas la chance de pouvoir se promener à vélo. La maladie, la pauvreté, l’exil, la vieillesse ont tôt fait
+                d’exclure les moins favorisés et les condamner à vivre constamment entre quatre murs, quand ce n’est pas de survivre dans la rue ! La mission des Cochers Solidaires
+                de Nice est de soulager, le temps d’une balade ou d’une livraison, les plus faibles, les plus seuls et les plus démunis. En contact avec les associations
+                humanitaires, les Cochers Solidaires de Nice s’engagent pour un futur simple basé sur le partage
+              </p>
+            </article>
+            <article className="w-[30%] bg-[#38363612] rounded-md p-5 text-justify">
+              <h4 className="text-xl mb-5 text-red roboto-bold">3.Respiration</h4>
+              <p>
+                Nice a besoin d’air pur, notre objectif principal est de réduire le trafic automobile des véhicules de livraison et de transport de personnes. Notre ville a été
+                dessinée bien avant l’invasion automobile et les rues et avenues n’avaient pas pour vocation d’être des parkings à ciel ouvert. Peu à peu, il faut revenir à la
+                sagesse du temps des cochers et des transports doux, d’autant plus qu’à vélo, à Nice aussi, on dépasse les autos et les taxis…
+              </p>
+            </article>
+          </div>
+        </section>
+        <section className="p-10" id="contact">
+          <h3 className="text-3xl mb-5 text-red roboto-bold">Nous contacter</h3>
+          <p className="mb-10 text-xl roboto text-justify leading-6	">Si vous souhaitez nous contacter par email, n&apos;hésitez pas à nous écrire:</p>
+          <div className="flex justify-between">
+            <div className="grid place-content-center w-[50%]">
+              <button className=" py-2 px-5 text-4xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover">Envoyer un email</button>
+            </div>
+            <div className="grid place-content-center w-[50%]">
+              <Image src={mailIcon} width={100} alt="icon de mail" />
+            </div>
+          </div>
+        </section>
+        <Footer />
       </main>
     </div>
   );

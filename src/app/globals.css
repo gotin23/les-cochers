@@ -3,11 +3,18 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'cool';
-    src:url("../assets/fonts/coolveticarg.otf");
+    font-family: 'roboto-bold';
+    src:url("../assets/fonts/Roboto-Bold.ttf");
 }
-.cool{
-    font-family: 'cool';
+.roboto-bold{
+    font-family: 'roboto-bold';
+}
+@font-face {
+    font-family: 'roboto';
+    src:url("../assets/fonts/Roboto-Regular.ttf");
+}
+.roboto{
+    font-family: 'roboto';
 }
 
 
