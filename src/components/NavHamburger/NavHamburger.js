@@ -16,6 +16,13 @@ const NavHamburger = () => {
       document.body.classList.remove("no-scroll");
     }
   };
+  // Si l'utilisateur fait un retour arriere alors que le menu est ouvert
+  window.addEventListener("popstate", () => {
+    if (toggle) {
+      setToggle(false);
+      document.body.classList.remove("no-scroll");
+    }
+  });
   const navStyle = toggle ? "bottom-[-10svh]" : "bottom-[100svh]";
   return (
     <nav>
