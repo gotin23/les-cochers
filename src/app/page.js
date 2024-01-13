@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
+import { useMediaQuery } from "@react-hook/media-query";
 import NavBar from "@/components/NavBar/NavBar";
+import NavHamburger from "@/components/NavHamburger/NavHamburger";
 import Banner from "@/components/Banner/Banner";
 import Footer from "@/components/Footer/Footer";
-import cocherImage from "../assets/images/ancien-cocher.jpg";
+import cocherImage from "../assets/images/ancien-cocher.webp";
 import veloCargoImage from "../assets/images/velo-cargo.png";
 import mailIcon from "../assets/icons/Mailbox raised flag.svg";
 import arrowUpIcon from "../assets/icons/arrow-up.svg";
@@ -11,10 +14,14 @@ import secondLeafImage from "../assets/images/leaf.svg";
 import leafWindImage from "../assets/images/leaf-wind.svg";
 
 export default function Home() {
+  const isSmallScreen = useMediaQuery("(max-width: 840px)");
+  console.log(isSmallScreen);
   return (
     <div className="min-h-screen  bg-white 	w-[1440px] 2xl:w-[100%]">
       {/* La barre de navigation */}
       {/* <NavBar /> */}
+      {isSmallScreen ? <NavHamburger /> : <NavBar />}
+
       <main>
         {/* La banierre */}
         <Banner />
@@ -22,7 +29,7 @@ export default function Home() {
         <section className="p-10 sm:p-5" id="association">
           <h3 className="text-3xl mb-10 text-red roboto-bold">L’association</h3>
           <div className="flex w-full lg:flex-col">
-            <article className="w-[62%] pr-5 lg:w-[100%]">
+            <article className="w-[62%] pr-5 lg:w-[100%] lg:pr-0">
               <p className="text-xl syne text-justify leading-6	">
                 Les Cochers Solidaires de Nice mobilisent leurs cycles et leurs muscles au service des habitants, des associations et des visiteurs de{" "}
                 <span className="roboto-bold">Nice la belle</span>.
@@ -140,7 +147,9 @@ export default function Home() {
               <Image src={mailIcon} width={100} alt="icon de mail" />
             </div>
             <div className="grid place-content-center w-[50%] sm:w-[100%]">
-              <button className=" py-2 px-5 text-4xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover md:text-2xl md:mt-10">Envoyer un email</button>
+              <button className=" py-2 px-5 text-4xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover md:text-2xl md:mt-10">
+                <a href="mailto:hue@cochers.fr"> Envoyer un email</a>
+              </button>
             </div>
           </div>
         </section>

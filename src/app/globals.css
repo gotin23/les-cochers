@@ -23,6 +23,10 @@
 .syne{
     font-family: 'syne';
 }
+.no-scroll {
+  overflow: hidden;
+}
+
 
 
   
