@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import BikeIcon from "../../assets/icons/cargo-bike-tricycle.svg";

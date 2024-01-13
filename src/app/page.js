@@ -1,26 +1,37 @@
 "use client";
 import Image from "next/image";
-import { useMediaQuery } from "@react-hook/media-query";
+import { useEffect, useState } from "react";
 import NavBar from "@/components/NavBar/NavBar";
 import NavHamburger from "@/components/NavHamburger/NavHamburger";
 import Banner from "@/components/Banner/Banner";
 import Footer from "@/components/Footer/Footer";
 import cocherImage from "../assets/images/ancien-cocher.webp";
-import veloCargoImage from "../assets/images/velo-cargo.png";
+import cargoBikeImage from "../assets/images/velo-cargo.png";
 import mailIcon from "../assets/icons/Mailbox raised flag.svg";
 import arrowUpIcon from "../assets/icons/arrow-up.svg";
-
-import secondLeafImage from "../assets/images/leaf.svg";
+import leafImage from "../assets/images/leaf.svg";
 import leafWindImage from "../assets/images/leaf-wind.svg";
 
 export default function Home() {
-  const isSmallScreen = useMediaQuery("(max-width: 840px)");
-  console.log(isSmallScreen);
+  const [windowWidth, setWindowWidth] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen  bg-white 	w-[1440px] 2xl:w-[100%]">
       {/* La barre de navigation */}
-      {/* <NavBar /> */}
-      {isSmallScreen ? <NavHamburger /> : <NavBar />}
+
+      {windowWidth > 820 ? <NavBar /> : <NavHamburger />}
 
       <main>
         {/* La banierre */}
@@ -72,7 +83,7 @@ export default function Home() {
           <h3 className="text-3xl  mb-10 text-red roboto-bold">Notre flotte à deux et trois roues</h3>
           <div className="flex justify-between lg:flex-col-reverse">
             <div className="w-[30%] flex justify-center items-center lg:w-[100%]">
-              <Image src={veloCargoImage} alt="velo cargo" width={350} className="lg:w-[60%]" />
+              <Image src={cargoBikeImage} alt="velo cargo" width={350} className="lg:w-[60%]" />
             </div>
             <div className="w-[70%] lg:w-[100%]">
               {" "}
@@ -119,7 +130,7 @@ export default function Home() {
               </p>
             </article>
             <article className="w-[26%] bg-[#38363612] rounded-md p-5 text-justify relative lg:w-[30%] md:w-[100%] md:mb-5">
-              <Image src={secondLeafImage} width={150} alt="icon fleche du haut" className="absolute left-2 top-2 rotate-90 opacity-25" />
+              <Image src={leafImage} width={150} alt="icon fleche du haut" className="absolute left-2 top-2 rotate-90 opacity-25" />
               <h4 className="text-2xl mb-5 text-red roboto-bold">Joie</h4>
               <p className="syne text-xl">
                 Une promenade sur… la Promenade, sur le Port ou dans les jardins en croisant des visages réjouis et des fleurs épanouies font plus d’effet que tranquillisants et
@@ -132,7 +143,7 @@ export default function Home() {
                 La mission des Cochers Solidaires de Nice est de soulager, le temps d’une balade ou d’une livraison, les plus faibles, les plus seuls et les plus démunis. Les
                 Cochers Solidaires de Nice s’engagent pour un futur simple basé sur le partage et sur l’espoir..
               </p>
-              <Image src={secondLeafImage} width={150} alt="icon fleche du haut" className="absolute right-0 bottom-1 opacity-25" />
+              <Image src={leafImage} width={150} alt="icon fleche du haut" className="absolute right-0 bottom-1 opacity-25" />
             </article>
           </div>
         </section>
