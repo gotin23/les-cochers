@@ -16,7 +16,7 @@ const NavHamburger = () => {
       document.body.classList.remove("no-scroll");
     }
   };
-  const navStyle = toggle ? "bottom-[0]" : "bottom-[100vh]";
+  const navStyle = toggle ? "bottom-[0]" : "bottom-[100svh]";
   return (
     <nav>
       <div className="w-6/6 bg-white flex justify-between py-5 px-3 roboto " id="accueil">

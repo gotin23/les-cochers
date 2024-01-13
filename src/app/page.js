@@ -171,9 +171,9 @@ export default function Home() {
             <Image src={arrowUpIcon} width={20} alt="icon fleche du haut" />
           </a>
         </div>
-        {/* Le footer */}
-        <Footer />
       </main>
+      {/* Le footer */}
+      <Footer />
     </div>
   );
 }
