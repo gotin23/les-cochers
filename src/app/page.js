@@ -12,17 +12,17 @@ import leafWindImage from "../assets/images/leaf-wind.svg";
 
 export default function Home() {
   return (
-    <div className="min-h-screen  bg-white 	w-[1440px]">
+    <div className="min-h-screen  bg-white 	w-[1440px] 2xl:w-[100%]">
       {/* La barre de navigation */}
-      <NavBar />
+      {/* <NavBar /> */}
       <main>
         {/* La banierre */}
         <Banner />
         {/* L'association */}
-        <section className="p-10" id="association">
+        <section className="p-10 sm:p-5" id="association">
           <h3 className="text-3xl mb-10 text-red roboto-bold">L’association</h3>
-          <div className="flex w-full">
-            <article className="w-[62%] pr-5">
+          <div className="flex w-full lg:flex-col">
+            <article className="w-[62%] pr-5 lg:w-[100%]">
               <p className="text-xl syne text-justify leading-6	">
                 Les Cochers Solidaires de Nice mobilisent leurs cycles et leurs muscles au service des habitants, des associations et des visiteurs de{" "}
                 <span className="roboto-bold">Nice la belle</span>.
@@ -55,19 +55,19 @@ export default function Home() {
                 en utilisant le moyen de transport le plus efficace sur le plan énergétique, le vélo !
               </p>
             </article>
-            <div className="w-[38%] flex items-center justify-center p-5">
+            <div className="w-[38%] flex items-center justify-center p-5 lg:w-[100%]">
               <Image alt={"photo de vieux cocher"} src={cocherImage} style={{ objectFit: "cover", maxHeight: "500px" }} placeholder="blur" />
             </div>
           </div>
         </section>
         {/* La flotte */}
-        <section id="notre-flotte" className="p-10">
+        <section id="notre-flotte" className="p-10 sm:p-5">
           <h3 className="text-3xl  mb-10 text-red roboto-bold">Notre flotte à deux et trois roues</h3>
-          <div className="flex justify-between">
-            <div className="w-[30% flex justify-center items-center">
-              <Image src={veloCargoImage} alt="velo cargo" width={350} />
+          <div className="flex justify-between lg:flex-col-reverse">
+            <div className="w-[30%] flex justify-center items-center lg:w-[100%]">
+              <Image src={veloCargoImage} alt="velo cargo" width={350} className="lg:w-[60%]" />
             </div>
-            <div className="w-[70%]">
+            <div className="w-[70%] lg:w-[100%]">
               {" "}
               <p className="text-xl syne text-justify leading-6	"> A ce jour, l’association dispose :</p>
               <br />
@@ -100,10 +100,10 @@ export default function Home() {
           </div>
         </section>
         {/* Nos valeurs */}
-        <section className="p-10" id="valeurs">
+        <section className="p-10 sm:p-5" id="valeurs">
           <h3 className="text-3xl  mb-10 text-red roboto-bold">Nos valeurs</h3>
-          <div className="flex justify-between">
-            <article className="w-[26%] bg-[#38363612] rounded-md p-5 text-justify relative">
+          <div className="flex justify-between md:flex-col ">
+            <article className="w-[26%] bg-[#38363612] rounded-md p-5 text-justify relative lg:w-[30%] md:w-[100%] md:mb-5">
               <Image src={leafWindImage} width={150} alt="icon fleche du haut" className="absolute right-0 top-1 opacity-25" />
               <h4 className="text-2xl mb-5 text-red roboto-bold">Respiration</h4>
               <p className="syne text-xl">
@@ -111,7 +111,7 @@ export default function Home() {
                 automobile. À vélo, à Nice aussi, on dépasse les autos. Revenons à la sagesse des cochers d’antan.
               </p>
             </article>
-            <article className="w-[26%] bg-[#38363612] rounded-md p-5 text-justify relative">
+            <article className="w-[26%] bg-[#38363612] rounded-md p-5 text-justify relative lg:w-[30%] md:w-[100%] md:mb-5">
               <Image src={secondLeafImage} width={150} alt="icon fleche du haut" className="absolute left-2 top-2 rotate-90 opacity-25" />
               <h4 className="text-2xl mb-5 text-red roboto-bold">Joie</h4>
               <p className="syne text-xl">
@@ -119,7 +119,7 @@ export default function Home() {
                 antidépresseurs. Nous partageons notre joie de vivre et de circuler les yeux grands ouverts dans notre cité.
               </p>
             </article>
-            <article className="w-[26%]  bg-[#38363612] rounded-md p-5 text-justify relative">
+            <article className="w-[26%]  bg-[#38363612] rounded-md p-5 text-justify relative lg:w-[30%] md:w-[100%]">
               <h4 className="text-2xl mb-5 text-red roboto-bold">Solidarité</h4>
               <p className="syne text-xl">
                 La mission des Cochers Solidaires de Nice est de soulager, le temps d’une balade ou d’une livraison, les plus faibles, les plus seuls et les plus démunis. Les
@@ -130,17 +130,17 @@ export default function Home() {
           </div>
         </section>
         {/* Nous contacter */}
-        <section className="p-10" id="contact">
+        <section className="p-10 sm:p-5" id="contact">
           <h3 className="text-3xl  mb-10 text-red roboto-bold">Nous contacter</h3>
           <p className="mb-10 text-xl syne text-justify leading-6	">
             Si vous souhaitez nous <span className="roboto-bold">contacter par email</span> , n&apos;hésitez pas à nous écrire:
           </p>
-          <div className="flex justify-between">
-            <div className="flex  w-[50%] justify-center">
+          <div className="flex justify-between sm:flex-col">
+            <div className="flex  w-[50%] justify-center sm:w-[100%]">
               <Image src={mailIcon} width={100} alt="icon de mail" />
             </div>
-            <div className="grid place-content-center w-[50%]">
-              <button className=" py-2 px-5 text-4xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover">Envoyer un email</button>
+            <div className="grid place-content-center w-[50%] sm:w-[100%]">
+              <button className=" py-2 px-5 text-4xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover md:text-2xl md:mt-10">Envoyer un email</button>
             </div>
           </div>
         </section>
