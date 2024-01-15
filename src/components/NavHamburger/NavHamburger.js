@@ -10,20 +10,9 @@ const NavHamburger = () => {
   const [toggle, setToggle] = useState(false);
   const toggleNav = () => {
     setToggle(!toggle);
-    if (!toggle) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
   };
-  // Si l'utilisateur fait un retour arriere alors que le menu est ouvert
-  // window.addEventListener("popstate", () => {
-  //   if (toggle) {
-  //     setToggle(false);
-  //     document.body.classList.remove("no-scroll");
-  //   }
-  // });
-  const navStyle = toggle ? "bottom-[-10svh]" : "bottom-[100svh]";
+
+  const navStyle = toggle ? "bottom-[-8svh]" : "bottom-[100svh]";
   return (
     <nav>
       <div className="w-6/6 bg-white flex justify-between py-5 px-3 roboto " id="accueil">
@@ -36,7 +25,7 @@ const NavHamburger = () => {
         </div>
       </div>
 
-      <div className={`flex justify-center align-middle bg-white top-0 left-0 right-0   absolute z-10 transition-all  overflow-hidden ${navStyle}`} onClick={toggleNav}>
+      <div className={`flex justify-center align-middle bg-white top-0 left-0 right-0  z-10 transition-all  overflow-hidden ${navStyle} fixed`} onClick={toggleNav}>
         <ul className="flex flex-col justify-center align-middle text-xl">
           <Link href={"/"} className="text-red flex justify-center my-2 ">
             Accueil

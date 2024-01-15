@@ -4,6 +4,40 @@ export const metadata = {
   title: "Les cochers solidaires",
   description:
     "L’association les Cochers Solidaires de Nice emmènent en vélo les enfants malades, les personnes âgées et les touristes à la découverte des charmes de la ville de Nice.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  keywords: [
+    "les cochers",
+    "association",
+    "vélo cargo",
+    "transport",
+    "enfants malades",
+    "touriste",
+    "maraude",
+    "solidaires",
+    "solidarité",
+    "Nice",
+    "personnes à mobilité réduite",
+    "jardin",
+    "livraison de colis",
+    "histoire locale",
+  ],
+  openGraph: {
+    title: "Les cochers solidaires",
+    description:
+      "L’association les Cochers Solidaires de Nice emmènent en vélo les enfants malades, les personnes âgées et les touristes à la découverte des charmes de la ville de Nice.",
+    url: "https://www.hue@cochers.fr",
+    siteName: "Les cochers solidaires",
+    images: [
+      {
+        url: "https://www.hue@cochers.fr/favicon.ico",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
