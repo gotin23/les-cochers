@@ -109,8 +109,8 @@ export default function Home() {
                   du vélo seul{" "}
                 </li>
                 <li className="text-xl syne text-justify leading-6	">
-                  - d’une remorque associée au tandem pouvant accueillir <span className="roboto-bold"> deux enfants </span>deux enfants de moins de 25 kg, avec ceintures de
-                  sécurité trois points
+                  - d’une remorque associée au tandem pouvant accueillir <span className="roboto-bold"> deux enfants </span> de moins de 25 kg, avec ceintures de sécurité trois
+                  points
                 </li>
                 <li className="text-xl syne text-justify leading-6	">
                   {" "}
@@ -133,7 +133,7 @@ export default function Home() {
             <article className="w-[26%] bg-[#38363612] rounded-md p-5 text-justify relative lg:w-[30%] md:w-[100%] md:mb-5">
               <Image src={leafWindImage} width={150} alt="icon fleche du haut" className="absolute right-0 top-1 opacity-25" />
               <h4 className="text-2xl mb-5 text-red roboto-bold">Respiration</h4>
-              <p className="syne text-xl">
+              <p className="syne text-xl hyphens-auto	">
                 Notre objectif principal est de réduire le trafic des véhicules de livraison et de transport de personnes. Notre ville a été dessinée bien avant l’invasion
                 automobile. À vélo, à Nice aussi, on dépasse les autos. Revenons à la sagesse des cochers d’antan.
               </p>
@@ -141,14 +141,14 @@ export default function Home() {
             <article className="w-[26%] bg-[#38363612] rounded-md p-5 text-justify relative lg:w-[30%] md:w-[100%] md:mb-5">
               <Image src={leafImage} width={150} alt="icon fleche du haut" className="absolute left-2 top-2 rotate-90 opacity-25" />
               <h4 className="text-2xl mb-5 text-red roboto-bold">Joie</h4>
-              <p className="syne text-xl">
+              <p className="syne text-xl hyphens-auto	">
                 Une promenade sur… la Promenade, sur le Port ou dans les jardins en croisant des visages réjouis et des fleurs épanouies font plus d’effet que tranquillisants et
                 antidépresseurs. Nous partageons notre joie de vivre et de circuler les yeux grands ouverts dans notre cité.
               </p>
             </article>
             <article className="w-[26%]  bg-[#38363612] rounded-md p-5 text-justify relative lg:w-[30%] md:w-[100%]">
               <h4 className="text-2xl mb-5 text-red roboto-bold">Solidarité</h4>
-              <p className="syne text-xl">
+              <p className="syne text-xl hyphens-auto	">
                 La mission des Cochers Solidaires de Nice est de soulager, le temps d’une balade ou d’une livraison, les plus faibles, les plus seuls et les plus démunis. Les
                 Cochers Solidaires de Nice s’engagent pour un futur simple basé sur le partage et sur l’espoir..
               </p>
@@ -159,7 +159,7 @@ export default function Home() {
         {/* Nous contacter */}
         <section className="p-10 sm:p-5" id="contact">
           <h3 className="text-3xl  mb-10 text-red roboto-bold">Nous contacter</h3>
-          <p className="mb-10 text-xl syne text-justify leading-6	">
+          <p className="mb-10 text-xl syne  leading-6 text-auto">
             Si vous souhaitez nous <span className="roboto-bold">contacter par email</span> , n&apos;hésitez pas à nous écrire:
           </p>
           <div className="flex justify-between sm:flex-col">
