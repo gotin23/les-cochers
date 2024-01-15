@@ -6,6 +6,7 @@ import NavHamburger from "@/components/NavHamburger/NavHamburger";
 import Banner from "@/components/Banner/Banner";
 import Footer from "@/components/Footer/Footer";
 import cocherImage from "../assets/images/ancien-cocher.webp";
+import childOnBikeImage from "../assets/images/velo-enfant.webp";
 import cargoBikeImage from "../assets/images/velo-cargo.png";
 import mailIcon from "../assets/icons/Mailbox raised flag.svg";
 import arrowUpIcon from "../assets/icons/arrow-up.svg";
@@ -82,11 +83,18 @@ export default function Home() {
         {/* La flotte */}
         <section id="notre-flotte" className="p-10 sm:p-5">
           <h3 className="text-3xl  mb-10 text-red roboto-bold">Notre flotte à deux et trois roues</h3>
-          <div className="flex justify-between lg:flex-col-reverse">
-            <div className="w-[30%] flex justify-center items-center lg:w-[100%]">
-              <Image src={cargoBikeImage} alt="velo cargo" width={350} className="lg:w-[60%]" />
+          <div className="flex justify-between items-center lg:flex-col-reverse">
+            <div className="w-[40%] flex justify-center items-center lg:mt-5 lg:w-[100%]">
+              <Image
+                src={childOnBikeImage}
+                alt="velo cargo"
+                width={825}
+                height={1100}
+                style={{ objectFit: "cover", maxHeight: "600px", minHeight: "420px" }}
+                className="w-[70%] lg:w-[60%] sm:w-[80%]"
+              />
             </div>
-            <div className="w-[70%] lg:w-[100%]">
+            <div className="w-[60%] lg:w-[100%]">
               {" "}
               <p className="text-xl syne text-justify leading-6	"> A ce jour, l’association dispose :</p>
               <br />
