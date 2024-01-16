@@ -7,7 +7,6 @@ import Banner from "@/components/Banner/Banner";
 import Footer from "@/components/Footer/Footer";
 import cocherImage from "../assets/images/ancien-cocher.webp";
 import childOnBikeImage from "../assets/images/velo-enfant.webp";
-import cargoBikeImage from "../assets/images/velo-cargo.png";
 import mailIcon from "../assets/icons/Mailbox raised flag.svg";
 import arrowUpIcon from "../assets/icons/arrow-up.svg";
 import leafImage from "../assets/images/leaf.svg";
@@ -183,6 +182,12 @@ export default function Home() {
       </main>
       {/* Le footer */}
       <Footer />
+      {/* <div>
+        <h1>PDF Viewer</h1>
+        <iframe src={"/data/pdfGazette/Gazette%2030.pdf"} />
+        <a href="/data/pdfGazette/Gazette%2030.pdf">ici</a>
+        <embed src="/data/pdfGazette/Gazette 30.pdf" width="800" height="500" type="application/pdf" />
+      </div> */}
     </div>
   );
 }

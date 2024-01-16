@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       white: "#f9f6f6",
       red: "#d31703",
+      green: "#097405",
       redHover: "#e44c3b",
     },
     screens: {
@@ -16,7 +17,7 @@ module.exports = {
 
       md: { max: "767px" },
 
-      sm: { max: "639px" },
+      sm: { max: "652px" },
     },
   },
   plugins: [],
