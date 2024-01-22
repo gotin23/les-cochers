@@ -125,9 +125,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* Nos valeurs */}
+        {/*Un Futur Simple*/}
         <section className="p-10 sm:p-5" id="valeurs">
-          <h3 className="text-3xl  mb-10 text-red roboto-bold">Nos valeurs</h3>
+          <h3 className="text-3xl  mb-10 text-red roboto-bold">Un futur simple a vélo</h3>
           <div className="flex justify-between md:flex-col ">
             <article className="w-[26%] bg-[#38363612] rounded-md p-5 text-justify relative lg:w-[30%] md:w-[100%] md:mb-5">
               <Image src={leafWindImage} width={150} alt="icon fleche du haut" className="absolute right-0 top-1 opacity-25" />
@@ -182,12 +182,6 @@ export default function Home() {
       </main>
       {/* Le footer */}
       <Footer />
-      {/* <div>
-        <h1>PDF Viewer</h1>
-        <iframe src={"/data/pdfGazette/Gazette%2030.pdf"} />
-        <a href="/data/pdfGazette/Gazette%2030.pdf">ici</a>
-        <embed src="/data/pdfGazette/Gazette 30.pdf" width="800" height="500" type="application/pdf" />
-      </div> */}
     </div>
   );
 }

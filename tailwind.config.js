@@ -7,6 +7,7 @@ module.exports = {
       red: "#d31703",
       green: "#097405",
       redHover: "#e44c3b",
+      greenHover: "#30a92c",
     },
     screens: {
       "2xl": { max: "1535px" },

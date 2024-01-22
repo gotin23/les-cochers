@@ -15,7 +15,7 @@ const NavHamburger = () => {
   const navStyle = toggle ? "bottom-[-8svh]" : "bottom-[100svh]";
   return (
     <nav>
-      <div className="w-6/6 bg-white flex justify-between py-5 px-3 roboto " id="accueil">
+      <Link href="/" className="w-6/6 bg-white flex justify-between py-5 px-3 roboto" id="accueil">
         <div className="flex">
           <Image src={BikeIcon} className="w-8 mr-3 " alt="logo de velo cargo " />
           <h1 className="text-[18px]">Les cochers solidaires</h1>
@@ -23,7 +23,7 @@ const NavHamburger = () => {
         <div className="z-20" onClick={toggleNav}>
           {!toggle ? <Image src={MenuIcon} width={30} alt="icon de menu" /> : <Image src={CloseIcon} width={30} alt="icon de menu" />}
         </div>
-      </div>
+      </Link>
 
       <div className={`flex justify-center align-middle bg-white top-0 left-0 right-0  z-10 transition-all  overflow-hidden ${navStyle} fixed`} onClick={toggleNav}>
         <ul className="flex flex-col justify-center align-middle text-xl">
