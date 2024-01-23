@@ -2,16 +2,21 @@
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import couvTest from "../../../../public/data/CouvsGazette/Couv08.jpg";
+
 import NavBar from "@/components/NavBar/NavBar";
 import NavHamburger from "@/components/NavHamburger/NavHamburger";
 import Footer from "@/components/Footer/Footer";
 import CardPDF from "@/components/CardPDF/CardPDF";
+import textes from "../../../../public/data/textes.json";
 const Page = () => {
   const pathname = usePathname();
   const pathNumber = pathname.match(/\d+/g);
   const couvPath = "/data/CouvsGazette/Couv" + pathNumber + ".jpg";
   const [windowWidth, setWindowWidth] = useState("");
+  const textIndex = parseInt(pathNumber[0]) - 1;
+  const text = textes.textes[textIndex];
+
+  console.log(text, textIndex);
 
   useEffect(() => {
     const handleResize = () => {
@@ -40,11 +45,7 @@ const Page = () => {
           </div>
         </div>
         <div className="flex my-10  items-center px-10">
-          <p className="w-[50%]   text-justify text-2xl  bg-[#38363612] py-5 px-10 rounded-lg">
-            Véritable déclaration d’amour à notre terre-mère, le numéro 5 de la Gazette bousculait certaines idées reçues et remettait déjà en cause l’épierrage et l’apport
-            d’engrais chimiques Les chrysanthèmes, et par extension la famille des Composées (dénommée Astéracées désormais) étaient de saison. A noter l’histoire d’une
-            nouvelle-venue Sud-africaine qui est devenue très répandue : l’Euryops.
-          </p>
+          <p className="w-[50%]   text-justify text-2xl  bg-[#38363612] py-5 px-10 rounded-lg">{text}</p>
 
           <div className="w-[40%] flex justify-end">
             <Image src={couvPath} width={264} height={360} alt="couverture de la gazette" />

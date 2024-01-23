@@ -4,7 +4,6 @@ import Link from "next/link";
 import NavBar from "@/components/NavBar/NavBar";
 import NavHamburger from "@/components/NavHamburger/NavHamburger";
 import Footer from "@/components/Footer/Footer";
-import eyeIcon from "../../assets/icons/eye-icon.svg";
 import { useState, useEffect } from "react";
 import listPDF from "../../../public/data/pdfGazette/listPDF.json";
 import gazetteImage from "../../assets/images/couvHS4.jpg";
@@ -89,7 +88,13 @@ const LaGazetteDesJardins = () => {
               href={`gazette/${el.match(/\d+/g)}`}
             >
               <p className="roboto-bold mb-5">La gazette nº {el.match(/\d+/g)}</p>
-              <Image src={`/data/MiniatureGazette/Couv${el.match(/\d+/g)}petite.jpg`} width={273} height={390} alt="icon oeil" className="object-cover h-[390px] w-[773px]" />
+              <Image
+                src={`/data/MiniatureGazette/Couv${el.match(/\d+/g)}petite.jpg`}
+                width={273}
+                height={390}
+                alt="miniature de la gazette des jardins"
+                className="object-cover h-[390px] w-[773px]"
+              />
             </Link>
           ))}
         </div>
