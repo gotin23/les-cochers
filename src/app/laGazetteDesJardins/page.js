@@ -6,10 +6,9 @@ import NavHamburger from "@/components/NavHamburger/NavHamburger";
 import Footer from "@/components/Footer/Footer";
 import { useState, useEffect } from "react";
 import listPDF from "../../../public/data/pdfGazette/listPDF.json";
-import gazetteImage from "../../assets/images/couvHS4.jpg";
+import gazetteImage from "../../assets/images/Couv49.jpg";
 
 const LaGazetteDesJardins = () => {
-  console.log(listPDF);
   const [windowWidth, setWindowWidth] = useState("");
 
   useEffect(() => {
@@ -32,10 +31,10 @@ const LaGazetteDesJardins = () => {
 
       <main className="2xl:px-5">
         <section className="flex items-center mt-10 xl:flex-col">
-          <div className="w-[65%] pr-10 xl:w-[100%]">
+          <div className="w-[65%] pr-10 xl:w-[100%] lg:pr-0">
             <h1 className="text-3xl 2xl:text-2xl text-green my-10 roboto-bold">La Gazette des Jardins</h1>
             <p className=" mb-10 text-lg">
-              Quel est le rapport entre les Cochers Solidaires de Nice et La Gazette des Jardins, bimestriel ayant paru de 1995 à 2014 ? Réponse : le même créateur et le même
+              Quel est le rapport entre les Cochers Solidaires de Nice et La Gazette des Jardins, bimestriel ayant paru de 1995 à 2014 ? Réponse : le même créateur et le même
               engagement pour un futur simple, solidaire et joyeux.
               <br />
               La Gazette des Jardins fut une sacrée aventure qui méritait de laisser sa trace sur Internet. Fondée par Joëlle Bouana et de nombreux jardiniers professionnels et/ou
@@ -72,7 +71,7 @@ const LaGazetteDesJardins = () => {
           </div>
 
           <div className="w-[35%] h-full flex justify-center xl:w-[70%]">
-            <Image src={gazetteImage} width={300} alt="image de la gazette des jardins" />
+            <Image src={gazetteImage} width={350} alt="image de la gazette des jardins" />
           </div>
         </section>
         <section className="mt-10">
@@ -81,7 +80,6 @@ const LaGazetteDesJardins = () => {
 
           <div className="w-6/6 flex justify-center flex-wrap gap-10">
             {listPDF.files.map((el, idx) => (
-              // <CardPDF key={idx} path={el} />
               <Link
                 key={idx}
                 className="text-xl text-green w-[300px] flex flex-col  shadow-md py-3 px-5 roboto rounded-md transition hover:scale-105 hover:shadow-lg  justify-between"

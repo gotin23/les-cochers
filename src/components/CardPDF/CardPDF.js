@@ -8,10 +8,10 @@ const CardPDF = ({ path }) => {
   // console.log(pdfPath);
   return (
     <a href={pdfPath} className="w-[30%]">
-      <div className="w-[100%]  flex items-center justify-between shadow-lg py-3 px-3 syne rounded-md transition hover:scale-105 hover:shadow-xl">
-        <h4 className="text-lg text-green roboto">La Gazette nº{path} </h4>
-        <p className="syne">Cliquez ici</p>
-        <Image src={pdfIcon} width={40} height={40} alt="pdf icon" className="opacity-50" />
+      <div className="w-[100%]  flex items-center justify-center shadow-lg py-3 px-3 syne rounded-md transition  hover:scale-105 hover:shadow-xl">
+        <p className="text-lg text-green roboto-bold ">La Gazette Des Jardins nº{path} </p>
+        {/* <p className="roboto-bold">PDF</p> */}
+        {/* <Image src={pdfIcon} width={40} height={40} alt="pdf icon" className="opacity-50" /> */}
       </div>
     </a>
   );
