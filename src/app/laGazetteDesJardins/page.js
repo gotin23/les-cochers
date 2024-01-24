@@ -6,7 +6,7 @@ import NavHamburger from "@/components/NavHamburger/NavHamburger";
 import Footer from "@/components/Footer/Footer";
 import { useState, useEffect } from "react";
 import listPDF from "../../../public/data/pdfGazette/listPDF.json";
-import gazetteImage from "../../assets/images/Couv49.jpg";
+import gazetteImage from "../../assets/images/couv49.jpg";
 
 const LaGazetteDesJardins = () => {
   const [windowWidth, setWindowWidth] = useState("");
