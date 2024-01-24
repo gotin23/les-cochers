@@ -8,7 +8,7 @@ function NavBar() {
     <nav className="w-6/6 bg-white flex justify-between items-center py-6 roboto" id="accueil">
       <Link href="/" className="flex  2xl:ml-5 md:ml-2 ">
         <Image src={BikeIcon} className="w-10 mr-5 md:mr-2 lg:w-8 lg:mr-2" alt="logo de velo cargo" />
-        <h1 className="text-3xl 2xl:text-2xl lg:text-xl md:text-lg sm:text-base">Les cochers solidaires</h1>
+        <h1 className="text-3xl 2xl:text-2xl lg:text-xl md:text-lg sm:text-base">Les Cochers Solidaires De Nice</h1>
       </Link>
       <ul className="flex text-xl 2xl:mr-5 md:mr-2">
         <Link
@@ -37,10 +37,10 @@ function NavBar() {
           Contact
         </Link>
         <Link
-          className="ml-4 text-green	relative  after:content-[''] after:absolute after:bg-green after:h-[2px] after:w-0 after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-[-10px] hover:after:w-full hover:after:transition-all hover:after:duration-200 lg:text-base md:text-sm lg:ml-2"
+          className="ml-4 text-black	relative  after:content-[''] after:absolute after:bg-[#000000] after:h-[2px] after:w-0 after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-[-10px] hover:after:w-full hover:after:transition-all hover:after:duration-200 lg:text-base md:text-sm lg:ml-2"
           href={"/laGazetteDesJardins"}
         >
-          La gazette
+          Redécouvrir la gazette
         </Link>
       </ul>
     </nav>
