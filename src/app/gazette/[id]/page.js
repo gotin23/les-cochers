@@ -45,13 +45,13 @@ const Page = () => {
           </div>
         </div>
         <div className="flex my-10  items-center px-10">
-          <p className="w-[50%]   text-justify text-2xl  bg-[#38363612] py-5 px-10 rounded-lg">{text}</p>
+          <p className="w-[50%]   text-lg  bg-[#38363612] py-5 px-10 rounded-lg">{text}</p>
 
           <div className="w-[40%] flex justify-end">
             <Image src={couvPath} width={264} height={360} alt="couverture de la gazette" />
           </div>
         </div>
-        <h3 className="text-2xl 2xl:text-2xl text-green my-10 roboto-bold px-10">Accéder au Pdf Gratuitement:</h3>
+        <h3 className="text-2xl 2xl:text-2xl text-green my-10 roboto-bold px-10">Accéder au PDF Gratuitement:</h3>
         <div className="w-[100%] flex justify-center">
           <CardPDF path={pathNumber} />
         </div>

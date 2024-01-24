@@ -31,10 +31,10 @@ const LaGazetteDesJardins = () => {
       {windowWidth > 600 ? <NavBar /> : <NavHamburger />}
 
       <main className="2xl:px-5">
-        <section className="flex items-center xl:flex-col">
-          <div className="w-[70%] pr-10 xl:w-[100%]">
+        <section className="flex items-center mt-10 xl:flex-col">
+          <div className="w-[65%] pr-10 xl:w-[100%]">
             <h1 className="text-3xl 2xl:text-2xl text-green my-10 roboto-bold">La Gazette des Jardins</h1>
-            <p className=" mb-10  text-justify text-xl">
+            <p className=" mb-10 text-lg">
               Quel est le rapport entre les Cochers Solidaires de Nice et La Gazette des Jardins, bimestriel ayant paru de 1995 à 2014 ? Réponse : le même créateur et le même
               engagement pour un futur simple, solidaire et joyeux.
               <br />
@@ -71,33 +71,34 @@ const LaGazetteDesJardins = () => {
             </p>
           </div>
 
-          <div className="w-[30%] h-full flex justify-center xl:w-[70%]">
+          <div className="w-[35%] h-full flex justify-center xl:w-[70%]">
             <Image src={gazetteImage} width={300} alt="image de la gazette des jardins" />
           </div>
         </section>
+        <section className="mt-10">
+          <h3 className="text-3xl 2xl:text-2xl text-green my-10 roboto-bold">Les Gazettes</h3>
+          <p className="w-4/6 mb-10 syne text-lg xl:w-[100%]">Vous trouverez ci dessous les PDF accessibles gratuitement de La Gazette des Jardins</p>
 
-        <h3 className="text-3xl 2xl:text-2xl text-green my-10 roboto-bold">Les Gazettes</h3>
-        <p className="w-4/6 mb-10 syne text-xl xl:w-[100%]">Vous trouverez ci dessous les PDF accessibles gratuitement de La Gazette des Jardins</p>
-
-        <div className="w-6/6 flex justify-center flex-wrap gap-10">
-          {listPDF.files.map((el, idx) => (
-            // <CardPDF key={idx} path={el} />
-            <Link
-              key={idx}
-              className="text-xl text-green w-[300px] flex flex-col  shadow-md py-3 px-5 roboto rounded-md transition hover:scale-105 hover:shadow-lg  justify-between"
-              href={`gazette/${el.match(/\d+/g)}`}
-            >
-              <p className="roboto-bold mb-5">La gazette nº {el.match(/\d+/g)}</p>
-              <Image
-                src={`/data/MiniatureGazette/Couv${el.match(/\d+/g)}petite.jpg`}
-                width={273}
-                height={390}
-                alt="miniature de la gazette des jardins"
-                className="object-cover h-[390px] w-[773px]"
-              />
-            </Link>
-          ))}
-        </div>
+          <div className="w-6/6 flex justify-center flex-wrap gap-10">
+            {listPDF.files.map((el, idx) => (
+              // <CardPDF key={idx} path={el} />
+              <Link
+                key={idx}
+                className="text-xl text-green w-[300px] flex flex-col  shadow-md py-3 px-5 roboto rounded-md transition hover:scale-105 hover:shadow-lg  justify-between"
+                href={`gazette/${el.match(/\d+/g)}`}
+              >
+                <p className="roboto-bold mb-5">La gazette nº {el.match(/\d+/g)}</p>
+                <Image
+                  src={`/data/MiniatureGazette/Couv${el.match(/\d+/g)}petite.jpg`}
+                  width={273}
+                  height={390}
+                  alt="miniature de la gazette des jardins"
+                  className="object-cover h-[390px] w-[773px]"
+                />
+              </Link>
+            ))}
+          </div>
+        </section>
       </main>
       {/* Le footer */}
       <Footer />

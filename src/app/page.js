@@ -166,8 +166,8 @@ export default function Home() {
               <Image src={mailIcon} width={100} alt="icon de mail" />
             </div>
             <div className="grid place-content-center w-[50%] sm:w-[100%]">
-              <button className=" py-2 px-5 text-2xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover md:text-2xl md:mt-10">
-                <a href="mailto:hue@cochers.fr"> Envoyer un email</a>
+              <button className=" py-2 px-10 text-2xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover md:text-2xl md:mt-10">
+                <a href="mailto:hue@cochers.fr">Nous écrire</a>
               </button>
             </div>
           </div>
