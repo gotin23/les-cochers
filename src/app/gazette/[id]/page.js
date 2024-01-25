@@ -16,8 +16,6 @@ const Page = () => {
   const textIndex = parseInt(pathNumber[0]) - 1;
   const text = textes.textes[textIndex];
 
-  console.log(text, textIndex);
-
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -46,15 +44,15 @@ const Page = () => {
             <Image src={couvPath} width={270} height={360} alt="couverture de la gazette" />
           </div>
         </div>
-        <div className="flex items-center justify-center my-[80px] lg:flex-col">
-          {" "}
-          <p className="mr-5 text-xl">Vous voulez nous soutenir ?</p>
-          <button className=" text-2xl bg-green rounded-md text-white  hover:bg-greenHover w-[320px] h-[50px]  shadow-lg">Faire un Don !</button>
-        </div>
-        <h3 className="text-2xl 2xl:text-2xl text-green  mt-10 roboto-bold lg:px-10">Accéder au PDF Gratuitement:</h3>
-        <div className="w-[100%] mt-10 flex justify-center">
+        <div className="w-[100%] mt-[100px] flex justify-center">
           <CardPDF path={pathNumber} />
         </div>
+        <div className="flex items-center justify-center mt-[100px] lg:flex-col">
+          {" "}
+          <p className="mr-5 text-lg">Vous voulez nous soutenir ?</p>
+          <button className=" text-xl bg-green rounded-md p-3 text-white  hover:bg-greenHover    shadow-lg">Faire un Don !</button>
+        </div>
+        {/* <h3 className="text-2xl 2xl:text-2xl text-green  mt-10 roboto-bold lg:px-10">Accéder au PDF Gratuitement:</h3> */}
       </section>
 
       <Footer />

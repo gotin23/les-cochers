@@ -40,7 +40,7 @@ function NavBar() {
           className="ml-4 text-black	relative  after:content-[''] after:absolute after:bg-[#000000] after:h-[2px] after:w-0 after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-[-10px] hover:after:w-full hover:after:transition-all hover:after:duration-200 lg:text-base md:text-sm lg:ml-2"
           href={"/laGazetteDesJardins"}
         >
-          Redécouvrir la gazette
+          La Gazette des Jardins
         </Link>
       </ul>
     </nav>

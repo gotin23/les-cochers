@@ -32,20 +32,20 @@ const NavHamburger = () => {
           <Link href={"/"} className="text-red flex justify-center my-2 ">
             Accueil
           </Link>
-          <Link className=" text-red flex justify-center my-2" href={"#association"}>
+          <Link className=" text-red flex justify-center my-2" href={"/#association"}>
             Association
           </Link>
-          <Link className=" text-red flex justify-center my-2" href={"#notre-flotte"}>
+          <Link className=" text-red flex justify-center my-2" href={"/#notre-flotte"}>
             Notre flotte
           </Link>
-          <Link className=" text-red flex justify-center my-2" href={"#valeurs"}>
+          <Link className=" text-red flex justify-center my-2" href={"/#valeurs"}>
             Nos valeurs
           </Link>
-          <Link className="text-red flex justify-center my-2" href={"#contact"}>
+          <Link className="text-red flex justify-center my-2" href={"/#contact"}>
             Contact
           </Link>
           <Link className=" flex justify-center my-2" href={"/laGazetteDesJardins"}>
-            Redécouvrir la gazette
+            La Gazette des Jardins
           </Link>
         </ul>
       </div>

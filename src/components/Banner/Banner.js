@@ -17,12 +17,19 @@ function Banner() {
         placeholder="blur"
         alt="photo de velo cargo sur la promenade des anglais"
       />
-      <button className=" py-2 text-2xl bg-red rounded-md  text-white  hover:bg-redHover absolute right-[25%] transform  bottom-24 px-3 lg:w-[280px] lg:text-xl md:w-[180px] md:text-sm md:bottom-10">
-        Rejoignez-nous
-      </button>
-      <button className=" py-2 text-2xl px-3 bg-red rounded-md  text-white  hover:bg-redHover absolute  left-[25%] transform bottom-24  lg:w-[280px] lg:text-xl md:w-[180px] md:text-sm md:bottom-10">
-        Ecrivez-nous
-      </button>
+      <a href="https://www.helloasso.com/associations/les-cochers-solidaires-de-nice/adhesions/adhesion">
+        <button className=" py-2 text-2xl bg-red rounded-md  text-white  hover:bg-redHover absolute right-[25%] transform  bottom-24 px-3 lg:w-[280px] lg:text-xl md:w-[180px] md:text-sm md:bottom-10">
+          Rejoignez-nous
+        </button>
+      </a>
+      <a>
+        <button
+          href="mailto:hue@cochers.fr"
+          className=" py-2 text-2xl px-3 bg-red rounded-md  text-white  hover:bg-redHover absolute  left-[25%] transform bottom-24  lg:w-[280px] lg:text-xl md:w-[180px] md:text-sm md:bottom-10"
+        >
+          Ecrivez-nous
+        </button>
+      </a>
     </section>
   );
 }
