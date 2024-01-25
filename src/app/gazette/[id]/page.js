@@ -52,7 +52,7 @@ const Page = () => {
           <button className=" text-2xl bg-green rounded-md text-white  hover:bg-greenHover w-[320px] h-[50px]  shadow-lg">Faire un Don !</button>
         </div>
         <h3 className="text-2xl 2xl:text-2xl text-green  mt-10 roboto-bold lg:px-10">Accéder au PDF Gratuitement:</h3>
-        <div className="w-[100%] mt-5 flex justify-center">
+        <div className="w-[100%] mt-10 flex justify-center">
           <CardPDF path={pathNumber} />
         </div>
       </section>
