@@ -11,7 +11,8 @@ const Footer = () => {
           <Image src={cocherIcon} width={50} alt="logo de velo cargo" className=" md:w-[30px]" />
         </Link>
         <p className="syne md:text-xs text-center">
-          © 2024 Les Cochers. Tous droits réservés. | Mentions légales | <Link href="/politiqueConfidentialite">Politique de confidentialité</Link>
+          © 2024 Les Cochers. Tous droits réservés. | <Link href="/mentionLegales">Mentions légales</Link> |{" "}
+          <Link href="/politiqueConfidentialite">Politique de confidentialité</Link>
         </p>
         <Link href="/">
           <Image src={cocherIcon} width={50} className="[transform:rotateY(180deg)] md:w-[30px]" alt="logo de velo cargo" />

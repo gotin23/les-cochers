@@ -4,10 +4,10 @@ const Page = () => {
   return (
     <section className="min-h-screen  bg-white 	w-[1200px] 2xl:w-[100%]">
       <div className="px-10">
-        <h3 className="text-center text-3xl 2xl:text-2xl text-red mb-10 mt-10 roboto-bold">Politique de Confidentialité: Les cochers solidaires</h3>
+        <h3 className="text-center text-4xl 2xl:text-2xl text-red mb-10 mt-10 roboto-bold">Politique de Confidentialité: Les Cochers Solidaires</h3>
         <p className="mb-10 text-lg">
-          Bienvenue sur La Les cochers solidaires. Nous sommes déterminés à respecter votre vie privée et à protéger les informations que vous partagez avec nous. Cette politique
-          de confidentialité explique comment nous collectons, utilisons et protégeons vos données, même si nous n' avons pas de système de connexion ni n'utilisons de cookies.
+          Bienvenue sur Les Cochers Solidaires. Nous sommes déterminés à respecter votre vie privée et à protéger les informations que vous partagez avec nous. Cette politique de
+          confidentialité explique comment nous collectons, utilisons et protégeons vos données, même si nous n' avons pas de système de connexion ni n'utilisons de cookies.
         </p>
         <h3 className="text-center text-3xl 2xl:text-2xl text-red my-10 roboto-bold">Collecte d'Informations :</h3>
         <p className="mb-10 text-lg">
@@ -26,7 +26,7 @@ const Page = () => {
         <h3 className="text-center text-3xl 2xl:text-2xl text-red my-10 roboto-bold">Contact :</h3>
         <p className="mb-10 text-lg">
           Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à <a href="mailto:hue@cochers.fr">[hue@cochers.fr]</a>. Merci de faire
-          confiance à La Gazette des Jardins pour le respect de votre vie privée.
+          confiance aux Cochers Solidaires pour le respect de votre vie privée.
         </p>
         <div className="flex justify-center mb-5">
           <Link href="/">
