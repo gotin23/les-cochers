@@ -3,7 +3,6 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { redirect } from "next/navigation";
-
 import NavBar from "@/components/NavBar/NavBar";
 import NavHamburger from "@/components/NavHamburger/NavHamburger";
 import Footer from "@/components/Footer/Footer";
@@ -35,6 +34,7 @@ const Page = () => {
     } else {
       return redirect("/laGazetteDesJardins");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -59,7 +59,9 @@ const Page = () => {
         <div className="flex items-center justify-center mt-[100px] lg:flex-col">
           {" "}
           <p className="mr-5 text-lg lg:mr-0 lg:mb-5">Vous voulez nous soutenir ?</p>
-          <button className=" text-xl bg-green rounded-md p-3 text-white  hover:bg-greenHover    shadow-lg">Faire un Don !</button>
+          <a href="https://www.helloasso.com/associations/les-cochers-solidaires-de-nice/adhesions/adhesion">
+            <button className=" text-xl bg-green rounded-md p-3 text-white  hover:bg-greenHover    shadow-lg">Faire un Don !</button>
+          </a>
         </div>
       </section>
 
