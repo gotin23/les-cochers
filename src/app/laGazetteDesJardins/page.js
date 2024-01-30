@@ -89,7 +89,7 @@ const LaGazetteDesJardins = () => {
                 >
                   <p className="roboto mb-5 ml-5">La gazette nº {el.match(/\d+/g)}</p>
                   <Image
-                    src={`/data/MiniatureGazette/Couv${el.match(/\d+/g)}petite.jpg`}
+                    src={`/data/MiniatureGazette/Couv${20}petite.jpg`}
                     width={273}
                     height={390}
                     alt="miniature de la gazette des jardins"
