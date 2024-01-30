@@ -83,7 +83,6 @@ const LaGazetteDesJardins = () => {
           <ul className="w-6/6 flex justify-center flex-wrap gap-10">
             {listPDF.files.map((el, idx) => (
               <li key={idx}>
-                {console.log(el.match(/\d+/g))}
                 <Link
                   className="text-xl text-green w-[300px]  flex flex-col  shadow-lg  px- roboto rounded-md transition hover:scale-105 hover:shadow-lg  justify-between overflow-hidden"
                   href={`gazette/${el.match(/\d+/g)}`}

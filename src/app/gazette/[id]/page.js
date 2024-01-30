@@ -30,7 +30,7 @@ const Page = () => {
   }, []);
   useEffect(() => {
     if (pathNumber >= 1 && pathNumber <= 20) {
-      return console.log("oki");
+      return;
     } else {
       return redirect("/laGazetteDesJardins");
     }
