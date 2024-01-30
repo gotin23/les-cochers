@@ -8,7 +8,7 @@ function NavBar() {
     <nav className="w-6/6 bg-white flex justify-between items-center py-6 roboto" id="accueil">
       <Link href="/" className="flex  2xl:ml-5 md:ml-2 ">
         <Image src={BikeIcon} className="w-10 mr-5 md:mr-2 lg:w-8 lg:mr-2" alt="logo de velo cargo" />
-        <h1 className="text-3xl 2xl:text-2xl lg:text-xl md:text-lg sm:text-base">Les Cochers Solidaires De Nice</h1>
+        <h1 className="text-3xl 2xl:text-2xl lg:text-xl md:text-base">Les Cochers Solidaires De Nice</h1>
       </Link>
       <ul className="flex text-xl 2xl:mr-5 md:mr-2">
         <Link

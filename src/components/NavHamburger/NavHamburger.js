@@ -12,7 +12,7 @@ const NavHamburger = () => {
     setToggle(!toggle);
   };
 
-  const navStyle = toggle ? "bottom-[-8svh]" : "bottom-[100svh]";
+  const navStyle = toggle ? "bottom-[-0svh]" : "bottom-[100svh]";
   return (
     <nav>
       <div className="flex items-center justify-between">

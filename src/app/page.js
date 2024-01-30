@@ -32,7 +32,7 @@ export default function Home() {
     <div className="min-h-screen  bg-white 	w-[1440px] 2xl:w-[100%]">
       {/* La barre de navigation */}
 
-      {windowWidth > 600 ? <NavBar /> : <NavHamburger />}
+      {windowWidth > 700 ? <NavBar /> : <NavHamburger />}
 
       <main>
         {/* La banierre */}

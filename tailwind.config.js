@@ -14,11 +14,11 @@ module.exports = {
 
       xl: { max: "1279px" },
 
-      lg: { max: "1023px" },
+      lg: { max: "1060px" },
 
-      md: { max: "767px" },
+      md: { max: "840px" },
 
-      sm: { max: "652px" },
+      sm: { max: "700px" },
     },
   },
   plugins: [],
