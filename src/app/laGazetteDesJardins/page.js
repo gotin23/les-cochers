@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar/NavBar";
 import NavHamburger from "@/components/NavHamburger/NavHamburger";
 import Footer from "@/components/Footer/Footer";
 import { useState, useEffect } from "react";
-import listPDF from "../../../public/data/pdfGazette/listPDF.json";
+import listPDF from "../../../public/data/listPDF.json";
 import gazetteImage from "../../assets/images/couv49.jpg";
 
 const LaGazetteDesJardins = () => {
