@@ -55,7 +55,7 @@ const LaGazetteDesJardins = () => {
               Certaines familles et espèces ont changé de nom depuis, mais la quasi-totalité des articles restent d’actualité.
               <br />
               Si vous appréciez cette lecture,
-              <a href="">
+              <a href="https://www.helloasso.com/associations/les-cochers-solidaires-de-nice/formulaires/2">
                 <span className="roboto-bold"> n’hésitez pas à faire un don</span>
               </a>{" "}
               pour financer les Cochers Solidaires, qui en ont bien besoin pour investir dans des vélos permettant de transporter des personnes hospitalisées ou à mobilité réduite.

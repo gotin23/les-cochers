@@ -59,7 +59,7 @@ const Page = () => {
         <div className="flex items-center justify-center mt-8 lg:flex-col">
           {" "}
           <p className="mr-5 text-lg lg:mr-0 lg:mb-5">Vous voulez nous soutenir ?</p>
-          <a href="https://www.helloasso.com/associations/les-cochers-solidaires-de-nice/adhesions/adhesion">
+          <a href="https://www.helloasso.com/associations/les-cochers-solidaires-de-nice/formulaires/2">
             <button className=" text-xl bg-green rounded-md p-3 text-white  hover:bg-greenHover    shadow-lg">Faire un Don !</button>
           </a>
         </div>
