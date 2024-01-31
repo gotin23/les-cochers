@@ -50,23 +50,23 @@ export default function Home() {
               <p className="text-lg syne text-justify leading-6	">
                 {" "}
                 Nous souhaitons partager notre joie de circuler en sécurité sur le réseau de pistes cyclables en promenant en <span className="roboto-bold">vélo cargo</span>, en
-                tandem et remorque, et bientôt en tricycle pousse-pousse :
+                tandem et remorque, et bientôt en vélo calèche :
               </p>
               <ul>
-                <li className="text-lg syne text-justify leading-6	">- des enfants malades</li>
-                <li className="text-lg syne text-justify leading-6	">- des personnes à mobilité réduite</li>
-                <li className="text-lg syne text-justify leading-6	">- des personnes âgées</li>
-                <li className="text-lg syne text-justify leading-6	">- des amateurs de jardin, d’architecture et d’histoire locale.</li>
+                <li className="text-lg syne text-justify leading-6">- des enfants malades</li>
+                <li className="text-lg syne text-justify leading-6">- des personnes à mobilité réduite</li>
+                <li className="text-lg syne text-justify leading-6">- des personnes âgées</li>
+                <li className="text-lg syne text-justify leading-6">- des amateurs de jardin, d’architecture et d’histoire locale.</li>
               </ul>
               <br />
-              <p className="text-lg syne text-justify leading-6	">
-                Nous sommes également à la disposition des <span className="roboto-bold">associations à but solidaire</span>:
+              <p className="text-lg syne text-justify leading-6">
+                Nous sommes également à la disposition des <span className="roboto-bold">associations à but solidaire</span> :
               </p>
 
               <ul>
-                <li className="text-lg syne text-justify leading-6	">- transport de denrées alimentaires</li>
-                <li className="text-lg syne text-justify leading-6	">- maraudes à vélo</li>
-                <li className="text-lg syne text-justify leading-6	">- livraison de colis</li>
+                <li className="text-lg syne text-justify leading-6">- transport de denrées alimentaires</li>
+                <li className="text-lg syne text-justify leading-6">- maraudes à vélo</li>
+                <li className="text-lg syne text-justify leading-6">- livraison de colis</li>
               </ul>
               <br />
               <p className="text-lg syne text-justify leading-6	">
@@ -120,7 +120,7 @@ export default function Home() {
               <br />
               <p className="text-lg syne text-justify leading-6	">
                 {" "}
-                Dans un futur proche, nous disposerons d’un <span className="roboto-bold">tricycle pousse-pousse</span> (vélo calèche) permettant le déplacement de deux adultes.
+                Dans un futur proche, nous disposerons d’un <span className="roboto-bold">vélo calèche</span> permettant le déplacement de deux adultes.
               </p>
             </div>
           </div>

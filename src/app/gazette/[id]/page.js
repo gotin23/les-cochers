@@ -49,14 +49,14 @@ const Page = () => {
         <div className="flex my-10  items-center px-10 lg:flex-col lg:px-10">
           <p className="w-[50%]   text-lg  bg-[#38363612] py-5 px-10 rounded-lg lg:w-[100%] lg:px-5">{text}</p>
 
-          <div className="w-[40%] flex justify-end lg:mt-10 lg:justify-center">
+          <div className="w-[50%] flex justify-center lg:mt-10 lg:justify-center lg:w-[100%]">
             <Image src={couvPath} width={270} height={360} alt="couverture de la gazette" />
           </div>
         </div>
-        <div className="w-[100%] mt-[100px] flex justify-center lg:mt-10">
+        <div className="w-[100%] mt-8 flex justify-center lg:mt-10">
           <CardPDF path={pathNumber} />
         </div>
-        <div className="flex items-center justify-center mt-[100px] lg:flex-col">
+        <div className="flex items-center justify-center mt-8 lg:flex-col">
           {" "}
           <p className="mr-5 text-lg lg:mr-0 lg:mb-5">Vous voulez nous soutenir ?</p>
           <a href="https://www.helloasso.com/associations/les-cochers-solidaires-de-nice/adhesions/adhesion">
