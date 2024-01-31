@@ -22,11 +22,8 @@ function Banner() {
           Rejoignez-nous
         </button>
       </a>
-      <a>
-        <button
-          href="mailto:hue@cochers.fr"
-          className=" py-2 text-2xl px-3 bg-red rounded-md  text-white  hover:bg-redHover absolute  left-[25%] transform bottom-24  lg:w-[280px] lg:text-xl lg:left-[50%] lg:-translate-x-1/2 lg:bottom-44 md:w-[180px] md:text-sm md:bottom-24"
-        >
+      <a href="mailto:hue@cochers.fr">
+        <button className=" py-2 text-2xl px-3 bg-red rounded-md  text-white  hover:bg-redHover absolute  left-[25%] transform bottom-24  lg:w-[280px] lg:text-xl lg:left-[50%] lg:-translate-x-1/2 lg:bottom-44 md:w-[180px] md:text-sm md:bottom-24">
           Ecrivez-nous
         </button>
       </a>

@@ -43,8 +43,8 @@ const Page = () => {
 
       {windowWidth > 700 ? <NavBar /> : <NavHamburger />}
 
-      <section className="min-h-[500px] px-10 lg:px-0">
-        <h1 className="text-3xl 2xl:text-2xl text-green my-10 roboto-bold lg:px-10">La Gazette nº{pathNumber} </h1>
+      <section className="h-auto px-10 lg:px-0">
+        <h1 className="text-3xl 2xl:text-2xl text-green  roboto-bold lg:px-10">La Gazette nº{pathNumber} </h1>
 
         <div className="flex my-10  items-center px-10 lg:flex-col lg:px-10">
           <p className="w-[50%]   text-lg  bg-[#38363612] py-5 px-10 rounded-lg lg:w-[100%] lg:px-5">{text}</p>

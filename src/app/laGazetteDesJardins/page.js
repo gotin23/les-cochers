@@ -54,8 +54,11 @@ const LaGazetteDesJardins = () => {
               <br />
               Certaines familles et espèces ont changé de nom depuis, mais la quasi-totalité des articles restent d’actualité.
               <br />
-              Si vous appréciez cette lecture, <span className="roboto-bold">n’hésitez pas à faire un don</span> pour financer les Cochers Solidaires, qui en ont bien besoin pour
-              investir dans des vélos permettant de transporter des personnes hospitalisées ou à mobilité réduite.
+              Si vous appréciez cette lecture,
+              <a href="">
+                <span className="roboto-bold"> n’hésitez pas à faire un don</span>
+              </a>{" "}
+              pour financer les Cochers Solidaires, qui en ont bien besoin pour investir dans des vélos permettant de transporter des personnes hospitalisées ou à mobilité réduite.
               <br />
               Nous nous équipons également pour proposer des <span className="roboto-bold">visites botaniques, historiques et architecturales</span> de la cité niçoise. J’aurai
               peut-être l’honneur et le plaisir de vous véhiculer en vous parlant des végétaux et des lieux méconnus de la cité niçoise.
