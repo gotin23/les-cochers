@@ -2,6 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Les cochers solidaires",
+  metadataBase: new URL("https://cochers.fr"),
   description:
     "L’association les Cochers Solidaires de Nice emmènent en vélo les enfants malades, les personnes âgées et les touristes à la découverte des charmes de la ville de Nice.",
   icons: {

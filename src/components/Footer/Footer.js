@@ -13,6 +13,7 @@ const Footer = () => {
         <p className="syne md:text-xs text-center">
           © 2024 Les Cochers. Tous droits réservés. | <Link href="/mentionLegales">Mentions légales</Link> |{" "}
           <Link href="/politiqueConfidentialite">Politique de confidentialité</Link>
+          <a href="https://gotin23.github.io/Portfolio/"> | Créé par Gotin</a>
         </p>
         <Link href="/">
           <Image src={cocherIcon} width={50} className="[transform:rotateY(180deg)] md:w-[30px]" alt="logo de velo cargo" />
