@@ -4,7 +4,7 @@ export const metadata = {
   title: "Les cochers solidaires",
   metadataBase: new URL("https://cochers.fr"),
   description:
-    "L’association les Cochers Solidaires de Nice emmènent en vélo les enfants malades, les personnes âgées et les touristes à la découverte des charmes de la ville de Nice.",
+    "L’association les Cochers Solidaires de Nice promène à vélo les enfants malades, les personnes âgées et les touristes à la découverte des charmes de la ville de Nice.",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
@@ -28,12 +28,12 @@ export const metadata = {
   openGraph: {
     title: "Les cochers solidaires",
     description:
-      "L’association les Cochers Solidaires de Nice emmènent en vélo les enfants malades, les personnes âgées et les touristes à la découverte des charmes de la ville de Nice.",
+      "L’association les Cochers Solidaires de Nice promène à vélo les enfants malades, les personnes âgées et les touristes à la découverte des charmes de la ville de Nice.",
     url: "https://www.hue@cochers.fr",
     siteName: "Les cochers solidaires",
     images: [
       {
-        url: "https://www.hue@cochers.fr/favicon.ico",
+        url: "/data/HomeCochers.webp",
       },
     ],
     locale: "fr_FR",

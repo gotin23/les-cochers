@@ -48,7 +48,7 @@ const Page = ({ params }) => {
           <p className="w-[50%]   text-lg  bg-[#38363612] py-5 px-10 rounded-lg lg:w-[100%] lg:px-5">{text}</p>
 
           <div className="w-[50%] flex justify-center lg:mt-10 lg:justify-center lg:w-[100%]">
-            <a href={`/data/pdfGazette/Gazette${pathNumber}.pdf`}>
+            <a href={`/data/pdfGazette/Gazette${pathNumber}.pdf`} className=" shadow-lg rounded-md transition  hover:scale-105 hover:shadow-xl">
               <Image src={couvPath} width={270} height={360} alt="couverture de la gazette" />
             </a>
           </div>
