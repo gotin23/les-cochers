@@ -33,7 +33,8 @@ export const metadata = {
     siteName: "Les cochers solidaires",
     images: [
       {
-        url: "/data/HomeCochers.webp",
+        url: "https://www.cochers.fr/data/HomeCochers.webp",
+        alt: "Miniature des Cochers Solidaires de Nice",
       },
     ],
     locale: "fr_FR",
