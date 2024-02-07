@@ -32,7 +32,7 @@ export default function Home() {
     <div className="min-h-screen  bg-white 	w-[1440px] 2xl:w-[100%]">
       {/* La barre de navigation */}
 
-      {windowWidth > 700 ? <NavBar /> : <NavHamburger />}
+      {windowWidth < 700 ? <NavHamburger /> : <NavBar />}
 
       <main>
         {/* La banierre */}
@@ -169,6 +169,14 @@ export default function Home() {
               <button className=" py-2 px-10 text-2xl bg-red rounded-md mt-[12px] text-white  hover:bg-redHover md:text-2xl md:mt-10">
                 <a href="mailto:hue@cochers.fr">Nous écrire</a>
               </button>
+            </div>
+          </div>
+          <div>
+            <p className="mb-10 text-lg syne  leading-6 text-auto mt-20">
+              Vous pouvez aussi nous <span className="roboto-bold">contacter par courrier</span>:
+            </p>
+            <div className="w-[100%] flex justify-center">
+              <p className="text-lg">23 avenue du parc Robiony 06200 Nice</p>
             </div>
           </div>
         </section>

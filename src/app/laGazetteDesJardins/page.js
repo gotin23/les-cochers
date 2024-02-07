@@ -27,7 +27,7 @@ const LaGazetteDesJardins = () => {
     <div className="	w-[1440px] 2xl:w-[100%] flex flex-col justify-between syne ">
       {/* La barre de navigation */}
 
-      {windowWidth > 700 ? <NavBar /> : <NavHamburger />}
+      {windowWidth < 700 ? <NavHamburger /> : <NavBar />}
 
       <main className="2xl:px-5">
         <section className="flex items-center mt-10 xl:flex-col">

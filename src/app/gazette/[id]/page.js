@@ -5,7 +5,7 @@ export async function generateStaticParams() {
   const texts = await textes.textes;
 
   const result = texts.map((product, idx) => ({
-    id: idx >= 10 ? (idx + 1).toString() : "0" + (idx + 1).toString(),
+    id: idx >= 9 ? (idx + 1).toString() : "0" + (idx + 1).toString(),
   }));
 
   return result;

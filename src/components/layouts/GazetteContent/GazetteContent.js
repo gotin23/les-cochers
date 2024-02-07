@@ -39,7 +39,7 @@ const Page = ({ params }) => {
 
   return (
     <div className="w-[1440px] flex flex-col justify-between min-h-screen  bg-white syne">
-      {windowWidth > 700 ? <NavBar /> : <NavHamburger />}
+      {windowWidth < 700 ? <NavHamburger /> : <NavBar />}
 
       <section className="h-auto px-10 lg:px-0">
         <h1 className="text-3xl 2xl:text-2xl text-green  roboto-bold lg:px-10">La Gazette nº{pathNumber} </h1>
