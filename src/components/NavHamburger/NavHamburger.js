@@ -29,24 +29,36 @@ const NavHamburger = () => {
 
       <div className={`flex justify-center align-middle bg-white top-0 left-0 right-0  z-10 transition-all  overflow-hidden ${navStyle} fixed`} onClick={toggleNav}>
         <ul className="flex flex-col justify-center align-middle text-xl">
-          <Link href={"/"} className="text-red flex justify-center my-2 ">
-            Accueil
-          </Link>
-          <Link className=" text-red flex justify-center my-2" href={"/#association"}>
-            Association
-          </Link>
-          <Link className=" text-red flex justify-center my-2" href={"/#notre-flotte"}>
-            Notre flotte
-          </Link>
-          <Link className=" text-red flex justify-center my-2" href={"/#valeurs"}>
-            Nos valeurs
-          </Link>
-          <Link className="text-red flex justify-center my-2" href={"/#contact"}>
-            Contact
-          </Link>
-          <Link className=" flex justify-center my-2" href={"/laGazetteDesJardins"}>
-            La Gazette des Jardins
-          </Link>
+          <li>
+            <Link href={"/"} className="text-red flex justify-center my-2 ">
+              Accueil
+            </Link>
+          </li>
+          <li>
+            <Link className=" text-red flex justify-center my-2" href={"/#association"}>
+              Association
+            </Link>
+          </li>
+          <li>
+            <Link className=" text-red flex justify-center my-2" href={"/#notre-flotte"}>
+              Notre flotte
+            </Link>
+          </li>
+          <li>
+            <Link className=" text-red flex justify-center my-2" href={"/#valeurs"}>
+              Nos valeurs
+            </Link>
+          </li>
+          <li>
+            <Link className="text-red flex justify-center my-2" href={"/#contact"}>
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link className=" flex justify-center my-2" href={"/laGazetteDesJardins"}>
+              La Gazette des Jardins
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
