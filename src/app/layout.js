@@ -10,7 +10,8 @@ export const metadata = {
     apple: "/apple-touch-icon.png",
   },
   keywords: [
-    "les cochers",
+    "les cochers solidaires",
+    "cochers",
     "association",
     "vélo cargo",
     "transport",

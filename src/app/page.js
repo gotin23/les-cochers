@@ -11,6 +11,7 @@ import mailIcon from "../assets/icons/Mailbox raised flag.svg";
 import arrowUpIcon from "../assets/icons/arrow-up.svg";
 import leafImage from "../assets/images/leaf.svg";
 import leafWindImage from "../assets/images/leaf-wind.svg";
+import handyImage from "../assets/images/handyplogging.webp";
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState("");
@@ -74,9 +75,12 @@ export default function Home() {
                 en utilisant le moyen de transport le plus efficace sur le plan énergétique, le vélo !
               </p>
             </article>
-            <div className="w-[38%] flex items-center justify-end ml-10 p-5 lg:w-[100%] lg:ml-0">
-              <Image alt={"photo de vieux cocher"} src={cocherImage} style={{ objectFit: "cover", maxHeight: "500px" }} placeholder="blur" />
+            <div className="w-[38%] flex items-center justify-end ml-10 lg:w-[100%] lg:justify-center lg:ml-0 lg:mt-10">
+              <Image alt={"photo transport handy"} src={handyImage} style={{ objectFit: "cover", maxHeight: "500px" }} placeholder="blur" />
             </div>
+          </div>
+          <div className=" flex items-center justify-center ml-10 lg:w-[100%] lg:ml-0 mt-20">
+            <Image alt={"photo de vieux cocher"} src={cocherImage} style={{ objectFit: "cover", maxHeight: "500px" }} placeholder="blur" />
           </div>
         </section>
         {/* La flotte */}
